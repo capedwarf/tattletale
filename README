@@ -1,0 +1,4 @@
+This is a CapeDwarf Green based example app.
+It can be run in two flavors - GAE or JEE.
+By default we use GAE, to test CapeDwarf Blue.
+
