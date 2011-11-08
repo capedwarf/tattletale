@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_name">Tožibaba</string>
+    <string name="tt_overview">Tožibaba: Pregled dogodkov</string>
+    <string name="tt_list">Tožibaba: Seznam dogodkov</string>
+    <string name="tt_settings">Tožibaba: Nastavitve</string>
+    <string name="tt_publish_event">Tožibaba: Prijava dogodka</string>
+    <string name="tt_add_channel">Tožibaba: Dodajanje kanala</string>
+    <string name="tt_event_details">Tožibaba: Podrobnosti dogodka</string>
+    <string name="tt_select_file">Tožibaba: Izbira datoteke</string>
+    <string name="tt_login">Tožibaba: Prijava</string>
+    <string name="tt_info">Tožibaba: Info</string>
+    <string name="tt_lost_password">Tožibaba: Izgubljeno geslo</string>
+    <string name="tt_password_recovery">Tožibaba: Obnovitev gesla</string>
+    <string name="tt_password_recovery_request">Tožibaba: Zahteva za obnovitev gesla</string>
+    <string name="tt_event_archive">Tožibaba: Arhiv dogodkov</string>
+    <string name="tt_new_user">Tožibaba: Nov uporabnik</string>
+    <string name="tt_edit_subscriptions">Tožibaba: Naročanje na sporočila</string>
+    <string name="tt_set_location">Tožibaba: Izbira lokacije</string>
+
+    <string name="version">1.1</string>
+    <string name="foreground_service_started">Sistem Tožibaba je aktiven</string>
+
+    <string name="about_translators">translator-credits</string>
+
+
+    <string name="menu_open">Odpri</string>
+
+    <string name="this_folder_is_empty">V tej mapi ni slik.</string>
+    <string name="error_generic">Prišlo je do napake:</string>
+    <string name="wrong_user">Napačno geslo, ali napačen uporabnik!</string>
+
+    <string name="wrong_password_or_user">Enkratno geslo ni pravilno, ali napačen uporabnik!</string>
+    <string name="username">Uporabniško ime</string>
+    <string name="not_available">ni več na voljo!</string>
+    <string name="back">Nazaj</string>
+    <string name="error">Napaka</string>
+    <string name="new_user">Nov uporabnik</string>
+    <string name="m_continue">Nadaljuj</string>
+    <string name="error_check_connection">Prišlo je do napake. Poizkusite znova. Preverite povezavo z internetom.</string>
+    <string name="user_created">Uporabnik je bil uspešno ustvarjen!</string>
+    <string name="login_success">Prijava uspela!</string>
+    <string name="creating_user">Izdelava uporabnika ...</string>
+    <string name="login">Prijava</string>
+
+    <string name="username_hint">Uporabniško ime (min 3, max 20 znakov)</string>
+    <string name="one_time_password_hint">Enkratno obnovitveno geslo (iz emaila)</string>
+    <string name="password_hint">(min 6, max 30 znakov)</string>
+    <string name="description_hint">Opis (max 100 znakov)</string>
+
+    <string name="channel_name_hint">Ime (min 3, max 50 znakov)</string>
+    <string name="default_validity">Prednastavljen čas veljavnosti:</string>
+    <string name="channel_name">Ime kanala:</string>
+    <string name="warning_moderated">Opozorilo: Prijava novega kanala je moderirana.</string>
+    <string name="topic_description">Opis kanala:</string>
+
+    <string name="email_hint">Email (omogoča obnovitev pozabljenega gesla - neobvezno)</string>
+    <string name="repeat_password">Ponovite geslo</string>
+    <string name="repeat_new_password">Ponovite novo geslo</string>
+    <string name="new_password">Novo geslo</string>
+    <string name="password">Geslo</string>
+
+    <string name="passwords_dont_match">Gesli se ne ujemata.</string>
+    <string name="fill_all">Prosimo, izpolnite vsa obvezna polja!</string>
+    <string name="should_contain">mora imet med</string>
+    <string name="and">in</string>
+    <string name="characters">znakov</string>
+
+    <string name="user_unknown">Neznano uporabniško ime ali email!</string>
+    <string name="recovery_not_possible">Obnovitev gesla ni možna!</string>
+    <string name="password_recovery">Zahtevek za obnovitev gesla</string>
+    <string name="email_notification">Na email boste prejeli enkraten PIN za obnovitev gesla.</string>
+    <string name="username_or_email">Uporabniško ime ali email</string>
+    <string name="please_fill_field">Prosimo, izpolnite polje!</string>
+
+    <string name="select_all">Izberi vse</string>
+    <string name="reactivate">Reaktiviraj</string>
+    <string name="delete">Izbriši</string>
+    <string name="list">Seznam</string>
+
+    <string name="comment">Komentar</string>
+    <string name="enter_text">Vnesite tekst</string>
+    <string name="confirm">Potrdi</string>
+    <string name="text_in_background">Komentar se bo poslal v ozadju.</string>
+    <string name="comment_success">Komentar je bil uspešno dodan.</string>
+    <string name="cancel">Prekliči</string>
+    <string name="error_reading_picture">Napaka pri branju slike.</string>
+    <string name="error_comment_not_sent">Prišlo je do napake pri komunikaciji s strežnikom. Komentar ni bil poslan. Preverite povezavo z internetom.</string>
+    <string name="put_to_archive">Arhiviraj</string>
+    <string name="archive">Arhiv</string>
+    <string name="filter">Filter</string>
+
+    <string name="enable_locations">Lokacije?</string>
+    <string name="enable_gps">Gps?</string>
+    <string name="ok">V redu</string>
+
+    <string name="welcome">"Bodite obveščeni in obveščajte! Pošljite dogodek s sliko, komentarjem in lokacijo na vgrajene kanale: policija, radar, zastoj, žur, kr neki,… ali pa predlagajte nov kanal. Prejmite opozorila na dogodke v vaši bližini, komentirajte – vse s Tožibabo.</string>
+
+    <string name="quick_intro">"Za dostop do vseh funkcij si izdelajte uporabnika v menuju Nastavitve. Več informacij si lahko preberete v menuju Info.&lt;p/>&lt;b>&lt;font color="#F3F781">Prijetno uporabo!&lt;/font>&lt;/b>"</string>
+
+    <string name="additional_comment">Dodaten komentar</string>
+    <string name="short_description">Kratek opis dogodka</string>
+    <string name="choose_photo">Izberite fotografijo</string>
+    <string name="select">Izberi</string>
+    <string name="channel">Kanal</string>
+
+    <string name="location">Lokacija</string>
+    <string name="valid_to">Veljavnost</string>
+    <string name="publish_on_subscribed">Objavljate lahko samo na prijavljenih kanalih.</string>
+    <string name="publish_event">Prijava dogodka</string>
+    <string name="confirm_publish">Potrdite prijavo dogodka:</string>
+    <string name="event_in_background">Sporočilo bo poslano v ozadju. Ta čas lahko nadaljujete z delom.</string>
+    <string name="event_to_channel">Sporočilo na kanal</string>
+    <string name="sent_success">je bilo uspešno poslano.</string>
+    <string name="error_event_not_sent">Prišlo je do napake pri komunikaciji s strežnikom. Sporočilo ni bilo poslano. Preverite povezavo z internetom.</string>
+
+    <string name="login_required">Za to funkcijo morate biti prijavljeni v sistem.</string>
+    <string name="event_filter">Filter za prikaz dogodkov</string>
+
+    <string name="subscriptions">Kanali</string>
+    <string name="add_channel">Dodaj kanal</string>
+    <string name="add_channel_title">Prijava kanala</string>
+    <string name="settings">Nastavitve</string>
+    <string name="exit">Izhod</string>
+
+    <string name="welcome_1">&lt;b>Dobrodošli v sistem &lt;font color="#F3F781">Tožibaba&lt;/font>&lt;/b></string>
+    <string name="hello">Pozdravljeni</string>
+	<string name="custom">Po meri</string>
+	<string name="every_x_min">Na %1$s min</string>
+	
+    <string name="event_update">Posodabljanje dogodkov</string>
+    <string name="event_update_period">Perioda posodabljanja dogodkov (v minutah)</string>
+    <string name="invalid_value_minutes">Neveljavna vrednost: vnesite število minut</string>
+    <string name="radius">Radij obveščanja</string>
+    <string name="radius_km">Radij obveščanja o dogodkih (v km)</string>
+    <string name="invalid_value_radius">Neveljavna vrednost: vnesite radij v km</string>
+    <string name="informing_attributes">Lastnosti obveščanja</string>
+    <string name="informing_with_sound">Obveščanje z zvokom</string>
+    <string name="informing_with_vibrating">Obveščanje s tresenjem</string>
+    <string name="new_login">Nova prijava</string>
+    <string name="lost_password">Izgubljeno geslo</string>
+    <string name="not_logged_in">Trenutno ste neprijavljeni</string>
+    <string name="logged_in_as">Prijavljeni ste kot</string>
+
+    <string name="data_refresh_background">Podatki o dogodkih se bodo obnovili v ozadju.</string>
+    <string name="channels_my_all">Kanali (moji / vsi): </string>
+    <string name="messages_active_acrhive">\nSporočila (aktivna / arhiv): </string>
+    <string name="last_message">\nZadnje sporočilo: </string>
+
+    <string name="description">Opis</string>
+    <string name="thanks">Zahvale</string>
+    <string name="legal">Pravni poduk</string>
+    <string name="about">O Tožibabi</string>
+    <string name="terms_of_use">Pogoji uporabe</string>
+    <string name="instructions">Navodila</string>
+
+    <string name="first_step">1. Korak - Zahteva za obnovitev gesla</string>
+    <string name="second_step">2. Korak - Vnos novega gesla</string>
+    <string name="password_renewal">Obnovitev gesla</string>
+    <string name="request">Zahteva</string>
+    <string name="error_occurred">Prišlo je do napake</string>
+    <string name="user_preparation">Priprava uporabnika</string>
+    <string name="create">Ustvari</string>
+    <string name="existing_user">Obstoječ uporabnik</string>
+
+
+    <string name="map_info">&lt;b>&lt;font color="#F3F781">1. Pregled dogodkov na zemljevidu&lt;/font>&lt;/b>&lt;p>&lt;/p>
+        To je začetni prikaz, kjer vidite dogodke označene na zemljevidu.
+        Dogodki, ki so v vašem radiju (označen z zelenim krogom), bodo sprožili opomnik na vašem telefonu.
+        Ob izbiri dogodka boste videli njegove podrobnosti, sliko, komentarje in tudi sami ga boste lahko komentirali.
+        Velikost radija si lahko spremenite v nastavitvah.</string>
+
+    <string name="list_info">&lt;b>&lt;font color="#F3F781">2. Pregled dogodkov na seznamu in v arhivu&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Tu so dogodki prikazani glede na oddaljenost od vaše trenutne lokacije. Na tem pregledu lahko dogodke tudi
+            brišete in arhivirate. Arhiv dogodkov je še vedno dosegljiv, le da arhiviranih dogodkov ne boste več videli na
+            zemljevidu.</string>
+
+    <string name="detail_info">&lt;b>&lt;font color="#F3F781">3. Podroben pregled dogodka in komentarji&lt;/font>&lt;/b>&lt;p>&lt;/p>
+                    V podrobnem pregledu dogodka je prikazan celoten dogodek z vsemi komentarji in dodano sliko. Tu imate možnost
+                    komentiranja dogodka.</string>
+
+    <string name="post_event_info">&lt;b>&lt;font color="#F3F781">4. Objava dogodka&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Na prijavljene kanale lahko tudi sami objavite dogodke. Pri objavi morate določiti kanal ter dodati naslov
+            objave. Opcijsko lahko napišete še komentar in spremenite lokacijo dogodka ter dodate fotografijo. Poslana fotografija
+            bo pomanjšana zaradi bolj optimalnega delovanja sistema.</string>
+
+    <string name="subscriptions_info">&lt;b>&lt;font color="#F3F781">5. Prijava na kanale&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            V seznamu kanalov lahko izberete, o katerih kanalih želite dobivati obvestila. Obvestila lahko pošiljate samo na kanale, na katere ste naročeni.</string>
+
+    <string name="new_channel_info">&lt;b>&lt;font color="#F3F781">6. Prijava novega kanala&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Sistem uporabnikom omogoča dodajanje novih kanalov. Ta funkcija je moderirana s strani administratorjev sistema. Dodani bodo samo odobreni kanali.</string>
+
+    <string name="filter_info">&lt;b>&lt;font color="#F3F781">7. Filtriranje dogodkov&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Na mapi in v seznamu dogodkov imate možnost filtriranja dogodkov. Izberite filter v menuju ali z gumbom na mapi in odkljukajte samo tiste kanale, ki vas ta trenutek
+        zanimajo. Filter lahko kadarkoli spremenite, velja pa za vse tri preglede: mape, seznam dogodkov in arhiv dogodkov. </string>
+
+    <string name="auto_archive_info">&lt;b>&lt;font color="#F3F781">8. Avtomatično arhiviranje&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Zastareli dogodki bodo avtomatično arhivirani. To pomeni, da jih ne boste videli na mapi in v seznamu, temveč samo v arhivu dogodkov. Dogodke
+    lahko tudi ročno arhivirate in odarhivirate. Odarhivirani dogodki ne bodo nikoli avtomatično arhivirani.</string>
+
+    <string name="settings_info">&lt;b>&lt;font color="#F3F781">9. Nastavitve&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            V nastavitvah si lahko:
+            &lt;p>&lt;/p> - izberete velikost radija v katerem vas bo telefon opozarjal na dogodke
+            &lt;p>&lt;/p> - nastavite kako pogosto sistem obnavlja podatke (s tem lahko zmanjšate količino prenešenih podatkov preko interneta)
+            &lt;p>&lt;/p> - izdelate uporabniško ime za prijavo v sistem
+            &lt;p>&lt;/p> - nastavite zvok obvestil</string>
+
+    <string name="widget_info">&lt;b>&lt;font color="#F3F781">10. Pripomoček - Widget&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Na telefon lahko na namizje dodate Tožibaba pripomoček - widget. Z dolgim pritiskom na namizju dobite na razpolago možnosti, kjer izberete Pripomočki (Widgets) in nato Tožibaba.
+            Na namizju boste tako imeli vedno na voljo hiter dostop do pošiljanja dogodkov, možnost ročnega osveževanja podatkov s strežnika in statistike o aplikaciji.</string>
+
+    <string name="terms_of_use_info">Uporaba aplikacije &lt;font color="#F3F781">Tožibaba&lt;/font> je &lt;font color="#FF0000">brezplačna&lt;/font>. Sistem uporablja prenos podatkov preko
+                    interneta, ki vam ga vaš operater &lt;font color="#FF0000">obračuna po veljavnem ceniku.&lt;/font>
+                    Sistem ne uporablja SMS sporočil.</string>
+
+    <string name="description_info">Aplikacija &lt;font color="#F3F781">Tožibaba&lt;/font> je namenjena medsebojnem obveščanju uporabnikov o dogodkih v
+                    njihovi bližini. Dogodki so razporejeni po kanalih, glede na vsebino. Naročite se lahko na poljubne kanale za
+                    katere boste prejemali obvestila, ki jih bodo poslali ostali uporabniki sistema. Na naročene kanale lahko tudi
+                    sami pošiljate obvestila o dogodkih, na prejete dogodke pa lahko pošiljate komentarje.&lt;p>&lt;/p>\
+                    Za polno funkcionalnost sistema morate biti &lt;font color="#F3F781">prijavljeni z uporabniškim imenom in geslom&lt;/font>, ki si ga naredite v
+                    nastavitvah.</string>
+
+    <string name="legal_privacy_info">Sistem Tožibaba &lt;font color="#F3F781">&lt;b>spoštuje pravico do zasebnosti&lt;/b>&lt;/font>. Vsako prijavo kršenja zasebnosti bomo obravnavali in po
+        potrebi ustrezno ukrepali z odstranitvijo prijavljenega sporočila ali/in uporabnika.</string>
+
+
+    <string name="legal_wasnt_me_info">Lastniki sistema Tožibaba ne prevzemajo odgovornosti za prijavljeno vsebino.
+        Kakršnekoli &lt;font color="#F3F781">&lt;b>kršitve zasebnosti prijavite na &lt;/b>&lt;/font>tozibaba.application@gmail.com.</string>
+
+    <string name="legal_respect_privacy_info">Pri uporabi sistema &lt;font color="#F3F781">&lt;b>spoštujte pravico do zasebnosti&lt;/b>&lt;/font>. Vsako kršitev bomo obravnavali in ustrezno ukrepali.</string>
+
+
+    <string name="development_info">"&lt;font color="#F3F781">Tožibaba 1.1&lt;/font> &lt;p>&lt;/p> Razvoj: &lt;font color="##FFFF00">Mood Developers&lt;/font>"</string>
+
+    <string name="libraries_info">&lt;font color="#F3F781">&lt;b>Knjižnice:&lt;/b>&lt;p>&lt;/p> IO File Manger, OpenIntents (uporabljen za izbiro shranjenih fotografij)</string>
+
+    <string name="graphics_info">&lt;font color=\"#F3F781\">&lt;b>Grafika:&lt;/b>&lt;p>&lt;/p>code.google.com/p/google-maps-icons&lt;p>&lt;/p>androidicons.com&lt;p>&lt;/p>
+                                wefunction.com/2008/07/function-free-icon-set&lt;p>&lt;/p>everaldo.com (Everaldo Coelho, Crystal Project Icons)&lt;p>&lt;/p>jasonlarose.com&lt;p>&lt;/p>
+                                webIconSet.com&lt;p>&lt;/p>notmart.org&lt;p>&lt;/p>icon-king.com</string>
+
+    <string name="event_archived">Dogodek je arhiviran.</string>
+    <string name="event_unarchived">Dogodek je odarhiviran.</string>
+
+    <string name="delete_message">Brisanje dogodka</string>
+    <string name="confirm_delete">Želite res izbrisati dogodek?</string>
+    <string name="channel_error">Prišlo je do napake pri komunikaciji s strežnikom. Prijava ni bila poslana. Preverite povezavo z internetom.</string>
+    <string name="channel_added">Nov kanal je uspešno prijavljen. Potrditev kanala bo objavljena kot dogodek.</string>
+    <string name="add_channel_in_progress">Prijava novega kanala v teku.</string>
+    <string name="add_channel_warning">Opozorilo: prijava novega kanala je moderirana.\nPotrditev novega kanala bo objavljena kot Tožibaba dogodek.\nS potrditvijo boste prijavili kanal:</string>
+
+</resources>

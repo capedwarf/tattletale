@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="template.xhtml">
+    <ui:define name="content">
+        <h:messages/>
+        <h1>Tožibaba Caches - <h:outputText value="#{login.user}"/></h1>
+        <ui:fragment rendered="#{login.admin}">
+            <h:form id="evict">
+                <h:inputText id="cacheName" size="50"/>
+                <h:commandButton action="#{cc.evictCache}" value="Evict"/>
+            </h:form>
+            <p/>
+            <h:form id="clear">
+                <h:inputText id="cacheName" size="50"/>
+                <h:commandButton action="#{cc.clearCache}" value="Clear"/>
+            </h:form>
+            <p/>
+            <h:form id="execute">
+                <h:inputText id="args" size="50"/>
+                <h:commandButton action="#{cc.executeCache}" value="Execute"/>
+            </h:form>
+            <p/>
+            <h:form id="stats">
+                <h:inputText id="args" size="50"/>
+                <h:commandButton action="#{cc.statsCache}" value="Stats"/>
+            </h:form>
+            <p/>
+            <p/>
+            -------------------------------
+            <p/>
+            <p/>
+            <ui:fragment rendered="#{cc.size > 0}">
+                <h:dataTable value="#{cc.entries}" var="ce">
+                    <h:column>
+                        <f:facet name="header">Key</f:facet>
+                        <h:outputText value="#{ce.key}" />
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Value</f:facet>
+                        [<h:outputText value="#{ce.value}" />]
+                    </h:column>
+                </h:dataTable>
+            </ui:fragment>
+        </ui:fragment>
+    </ui:define>
+</ui:composition>
+</html>

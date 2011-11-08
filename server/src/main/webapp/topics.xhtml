@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="template.xhtml">
+	<ui:define name="content">
+		<h:messages />
+		<h1>Tožibaba Topics - <h:outputText value="#{login.user}" /></h1>
+        <ui:fragment rendered="#{login.editor}">
+            <h:dataTable value="#{ui.newTopics}" var="t">
+                <h:column>
+                    <f:facet name="header">Id</f:facet>
+                    <h:outputText value="#{t.id}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Name</f:facet>
+                    <h:outputText value="#{t.name}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Creator</f:facet>
+                    <h:outputText value="#{t.creator.username}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Reject</f:facet>
+                    <h:form id="reject">
+                        <h:commandLink action="#{tc.rejectTopic}" value="Reject" />
+                        <h:inputHidden id="topicId" value="#{t.id}"/>
+                    </h:form>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Confirm</f:facet>
+                    <h:form id="confirm">
+                        <h:commandLink action="#{tc.confirmTopic}" value="Confirm" />
+                        <h:inputHidden id="topicId" value="#{t.id}"/>
+                    </h:form>
+                </h:column>
+            </h:dataTable>
+        </ui:fragment>
+	</ui:define>
+</ui:composition>
+</html>

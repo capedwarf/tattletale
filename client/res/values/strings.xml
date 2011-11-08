@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_name">TattleTale</string>
+    <string name="tt_overview">TattleTale: Events overview</string>
+    <string name="tt_list">TattleTale: Events list</string>
+    <string name="tt_settings">TattleTale: Settings</string>
+    <string name="tt_publish_event">TattleTale: Publish event</string>
+    <string name="tt_add_channel">TattleTale: Add channel</string>
+    <string name="tt_event_details">TattleTale: Event details</string>
+    <string name="tt_select_file">TattleTale: Choose file</string>
+    <string name="tt_login">TattleTale: Login</string>
+    <string name="tt_info">TattleTale: Info</string>
+    <string name="tt_lost_password">TattleTale: Lost password</string>
+    <string name="tt_password_recovery">TattleTale: Password renewal</string>
+    <string name="tt_password_recovery_request">TattleTale: Password renewal request</string>
+    <string name="tt_event_archive">TattleTale: Events archive</string>
+    <string name="tt_new_user">TattleTale: New user</string>
+    <string name="tt_edit_subscriptions">TattleTale: Edit Subscriptions</string>
+    <string name="tt_set_location">TattleTale: Set Location</string>
+
+
+    <string name="version">1.1</string>
+    <string name="foreground_service_started">TattleTail system is active</string>
+    <!-- ***************************
+    	     About information
+    	     *************************** -->
+
+    <!-- Automatically filled in by Launchpad: -->
+    <string name="about_translators">translator-credits</string>
+
+
+    <string name="menu_open">Open</string>
+
+    <string name="this_folder_is_empty">This folder contains no pictures.</string>
+    <string name="error_generic">An error occured:</string>
+
+    <string name="wrong_user">Password and user name don\'t match.</string>
+
+    <string name="wrong_password_or_user">Wrong password or usernam</string>
+    <string name="username">Username</string>
+    <string name="not_available">no longer available!</string>
+
+    <string name="back">Back</string>
+    <string name="error">Error</string>
+
+    <string name="new_user">New user</string>
+    <string name="m_continue">Continue</string>
+    <string name="error_check_connection">An error occurred. Please, try again. Check internet connection first.</string>
+    <string name="user_created">User created!</string>
+    <string name="login_success">Login successfull!</string>
+    <string name="creating_user">Creating user...</string>
+    <string name="login">Login</string>
+
+    <string name="username_hint">Username (min 3, max 20 characters)</string>
+    <string name="one_time_password_hint">Single use password (from email)</string>
+    <string name="password_hint">(min 6, max 30 characters)</string>
+    <string name="channel_name_hint">Name (min 3, max 50 characters)</string>
+    <string name="default_validity">Deafult validity:</string>
+    <string name="description_hint">Description (max 100 cahracters)</string>
+
+    <string name="topic_description">Description:</string>
+    <string name="warning_moderated">Warning: adding channels is moderated.</string>
+    <string name="channel_name">Channel name:</string>
+    <string name="email_hint">Email (enables lost password recovery - optional)</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="repeat_new_password">Repeat new password</string>
+    <string name="new_password">New password</string>
+    <string name="password">Password</string>
+
+    <string name="passwords_dont_match">Passwords don\'t match.</string>
+    <string name="fill_all">Please fill all non optional fields.</string>
+
+    <string name="should_contain">should contain between</string>
+    <string name="and">and</string>
+    <string name="characters">characters</string>
+
+    <string name="user_unknown">Unknown username or email!</string>
+    <string name="recovery_not_possible">Password recovery is not possible!</string>
+    <string name="password_recovery">Password recovery request</string>
+    <string name="email_notification">You will receive a password recovery PIN to your email account</string>
+    <string name="username_or_email">Username or email</string>
+    <string name="please_fill_field">Please fill in the field.</string>
+
+    <string name="select_all">Select all</string>
+    <string name="reactivate">Reactivate</string>
+    <string name="delete">Delete</string>
+    <string name="list">List</string>
+
+    <string name="comment">Comment</string>
+    <string name="enter_text">Enter text</string>
+    <string name="confirm">Confirm</string>
+    <string name="text_in_background">Comment will be sent in the background.</string>
+    <string name="comment_success">Comment published.</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_reading_picture">Error loading picture.</string>
+    <string name="error_comment_not_sent">Error when communicating with the server. The comment was not published. Check internet connection.</string>
+    <string name="put_to_archive">To archive</string>
+    <string name="archive">Archive</string>
+    <string name="filter">Filter</string>
+
+    <string name="enable_locations">Locations?</string>
+    <string name="enable_gps">GPS?</string>
+    <string name="ok">OK</string>
+
+    <string name="welcome">Stay informed and inform others! Publish an event with a photo, comment and location on built in channels: police, radar, party, just for fun,… or suggest a new channel. Receive warnings of events near you, comment them – all that with TattleTale.</string>
+
+    <string name="quick_intro">To access all functions create a user in the Settings menu. Read more about TattleTale in the info menu.&lt;p/>&lt;b>&lt;font color="#F3F781">Have fun using TattleTale!&lt;/font>&lt;/b>"</string>
+
+    <string name="additional_comment">Additional comment</string>
+    <string name="short_description">Short description</string>
+    <string name="choose_photo">Choose a photo</string>
+    <string name="select">Select</string>
+    <string name="channel">Channel</string>
+
+    <string name="location">Location</string>
+    <string name="valid_to">Validity</string>
+    <string name="publish_on_subscribed">You can only publish events on subscribed topics.</string>
+    <string name="publish_event">Publish event</string>
+    <string name="confirm_publish">Confirm event to publish:</string>
+    <string name="event_in_background">The event will be published in the background. You may continue with your work.</string>
+    <string name="event_to_channel">Event to channel</string>
+    <string name="sent_success">published successfully.</string>
+    <string name="error_event_not_sent">An error occurred when communicating with the server. Event was not published. Check internet connection.</string>
+
+    <string name="login_required">This function requires the user to be logged in.</string>
+    <string name="event_filter">Event filter</string>
+
+    <string name="subscriptions">Subscriptions</string>
+    <string name="add_channel">Add channel</string>
+    <string name="add_channel_title">Add channel</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
+
+    <string name="welcome_1">&lt;b>Welcome to &lt;font color="#F3F781">TattleTale&lt;/font>&lt;/b></string>
+    <string name="hello">Hello</string>
+	<string name="custom">Custom</string>
+    <string name="every_x_min">Every %1$s min</string>
+
+    <string name="event_update">Event updating</string>
+    <string name="event_update_period">Event update period (in minutes)</string>
+    <string name="invalid_value_minutes">Invalid value: enter minutes</string>
+    <string name="radius">Notification radius</string>
+    <string name="radius_km">Event notification radius (in km)</string>
+    <string name="invalid_value_radius">Invalid value: enter kilometers</string>
+    <string name="informing_attributes">Notification parameters</string>
+    <string name="informing_with_sound">Sound notification</string>
+    <string name="informing_with_vibrating">Vibrating notification</string>
+    <string name="new_login">New login</string>
+    <string name="lost_password">Lost password</string>
+    <string name="not_logged_in">Currently you are not logged in</string>
+    <string name="logged_in_as">You are logged in as</string>
+
+    <string name="data_refresh_background">Data will refresh in the background.</string>
+    <string name="channels_my_all">Channels (mine / all): </string>
+    <string name="messages_active_acrhive">\nMessages (active / archive): </string>
+    <string name="last_message">\nLast message: </string>
+
+    <string name="description">Description</string>
+    <string name="thanks">Contributions</string>
+    <string name="legal">Legal Stuff</string>
+    <string name="about">About TattleTale</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="instructions">Instructions</string>
+
+    <string name="first_step">1. Step - Request for password renewal</string>
+    <string name="second_step">2. Step - Enter new password</string>
+
+    <string name="password_renewal">Password renewal</string>
+    <string name="request">Request</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="user_preparation">User preparation</string>
+    <string name="create">Create</string>
+    <string name="existing_user">Existing user</string>
+
+    <string name="map_info">&lt;b>&lt;font color=\"#F3F781\">1. Event overview on the map&lt;/font>&lt;/b>&lt;p>&lt;/p>
+        This is the basic view, which shows all active events on the map.
+        Events within your radius (marked with the green circle) will trigger notification signal on your phone.
+        You can select any event on the map to see the details: picture and comments, and also post comments your self.
+        The size of the radius is adjustable through the Settings menu.</string>
+
+    <string name="list_info">&lt;b>&lt;font color="#F3F781">2. Event list and archive&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            This is a list of events with distance from your current location. You can archive and delete events. Archived events are still available,
+        but they are no longer shown on the map and they no longer trigger notifications.</string>
+
+    <string name="detail_info">&lt;b>&lt;font color="#F3F781">3. Detail event view with comments&lt;/font>&lt;/b>&lt;p>&lt;/p>
+                    This is where you can see the complete event with comments and photo. You can also add your own comments here.</string>
+
+    <string name="post_event_info">&lt;b>&lt;font color="#F3F781">4. Publish event&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            You can publish events on any subscribed topic. When publishing, you have to pick a channel and enter a title for the event.
+            Optionally you may set the address manually, change the location, add comment and set a photo.</string>
+
+    <string name="subscriptions_info">&lt;b>&lt;font color="#F3F781">5. Subscribtions&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            In the list of channels you can pick those interesting to you in order to receive notifications of events. You can only publish events on subscribed channels.</string>
+
+    <string name="new_channel_info">&lt;b>&lt;font color="#F3F781">6. Add new channel&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            You can add new channels through this option. Adding channels is moderated by system administrators.</string>
+
+    <string name="filter_info">&lt;b>&lt;font color="#F3F781">7. Event filtering&lt;/font>&lt;/b>&lt;p>&lt;/p>
+        You can filter the events shown on the map in the event list and in the event archive. Choose filter from the menu or with the filter button on the map
+        and select only the channels you would like to see. You can change the filter any time and the change will reflect on all event views (map, list and archive).</string>
+
+    <string name="auto_archive_info">&lt;b>&lt;font color="#F3F781">8. Auto archive&lt;/font>&lt;/b>&lt;p>&lt;/p>
+        Out of date events will be archived by the system. They will no longer appear on the map or in the list of events, they will only be available in
+        the event archive list. You can also archive and unarchive events manually. Unarchived events will never be archived automatically.
+        </string>
+
+
+    <string name="settings_info">&lt;b>&lt;font color="#F3F781">9. Settings&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Settings menu allows you to:
+            &lt;p>&lt;/p> - set the radius in which you would like to receive notifications of events
+            &lt;p>&lt;/p> - set update period (you can decrease the sum of data transfered over the interntet by setting longer period)
+            &lt;p>&lt;/p> - create a user profile
+            &lt;p>&lt;/p> - set sound and vibrations for notifications</string>
+
+    <string name="widget_info">&lt;b>&lt;font color="#F3F781">10. Widget&lt;/font>&lt;/b>&lt;p>&lt;/p>
+            Use TattleTale widget on your phone desktop. Long press on your desktop and choose Widgets in the menu and then select TattleTale.
+            This way, you will always have quick access to sending events, option to refresh data manually from the server and information on aplication statistics.</string>
+
+    <string name="terms_of_use_info">&lt;font color="#F3F781">TattleTale&lt;/font> is completely &lt;font color="#FF0000">free to use&lt;/font>. The system uses internet data transfer
+        for which you will be charged by your mobile provider &lt;font color="#FF0000">according to your contract price list.&lt;/font>
+                    The system doesn\'t use SMS messages.</string>
+
+    <string name="description_info">Use &lt;font color="#F3F781">TattleTale&lt;/font> to be informed and to inform others about events you see near you.
+                    Events are arranged by channels, according to their contents. Subscribe to any channel and you will receive notifications of events sent
+        by other users of the system. You can also publish events on any channel to which you are subscribed and you can comment any event you receive to your phone.&lt;p>&lt;/p>
+        For full functionality of the system &lt;font color="#F3F781">you need to be logged in with your user name&lt;/font>, which you can create in the settings menu.</string>
+
+    <string name="legal_privacy_info">TattleTale &lt;font color="#F3F781">&lt;b>respects privacy&lt;/b>&lt;/font>. Any kind of reported privacy violation will be
+        checked and appropriate actions will be taken - either deleting the message and/or banning the user from the system.</string>
+
+    <string name="legal_wasnt_me_info">TattleTale owners are not responsible for any published contents.
+        Report any kind &lt;font color="#F3F781">&lt;b>of violation of privacy to &lt;/b>&lt;/font>tozibaba.application@gmail.com.</string>
+
+    <string name="legal_respect_privacy_info">While using TattleTale, &lt;font color="#F3F781">&lt;b>respect privacy of others&lt;/b>&lt;/font>. Any kind of privacy violation will result in banning the violator.</string>
+
+    <string name="development_info">"&lt;font color="#F3F781">TattleTale 1.1&lt;/font> &lt;p>&lt;/p> Development: &lt;font color="##FFFF00">Mood Developers&lt;/font>"</string>
+
+    <string name="libraries_info">&lt;font color="#F3F781">&lt;b>Libraries:&lt;/b>&lt;p>&lt;/p>IO File Manger by OpenIntents (used to pick stored photos for publishing)</string>
+
+    <string name="graphics_info">&lt;font color=\"#F3F781\">&lt;b>Graphics:&lt;/b>&lt;p>&lt;/p>code.google.com/p/google-maps-icons&lt;p>&lt;/p>androidicons.com&lt;p>&lt;/p>
+                                wefunction.com/2008/07/function-free-icon-set&lt;p>&lt;/p>everaldo.com (Everaldo Coelho, Crystal Project Icons)&lt;p>&lt;/p>jasonlarose.com&lt;p>&lt;/p>
+                                webIconSet.com&lt;p>&lt;/p>notmart.org&lt;p>&lt;/p>icon-king.com</string>
+
+    <string name="event_archived">Event archived.</string>
+    <string name="event_unarchived">Event unarchived.</string>
+
+    <string name="delete_message">Delete event</string>
+    <string name="channel_error">Communication error occured. Topic was not published. Check internet connection and try again.</string>
+    <string name="confirm_delete">Really delete event?</string>
+    <string name="channel_added">Suggestion for channel sent. Confirmation will be published as an event in TattleTale.</string>
+    <string name="add_channel_in_progress">Adding channel in progress.</string>
+    <string name="add_channel_warning">Warning: adding new channel is moderated.\nConfirmation of new channel being added will be published as a TattleTale event.\nConfirm to add new topic:</string>
+
+
+</resources>

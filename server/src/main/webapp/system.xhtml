@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="template.xhtml">
+	<ui:define name="content">
+		<h:messages />
+		<h1>Tožibaba System - <h:outputText value="#{login.user}" /></h1>
+        <ui:fragment rendered="#{login.admin}">
+            <h:form id="system">
+                <h:outputLabel for="topicId" value="Topics:">                
+                    <h:selectOneMenu id="topicId">
+                        <f:selectItems value="#{ui.allTopics}" var="t" itemValue="#{t.id}" itemLabel="#{t.name}"/>
+                    </h:selectOneMenu>
+                </h:outputLabel>
+                <p/>
+                <h:outputLabel for="eventId" value="Events:">
+                    <h:selectOneMenu id="eventId">
+                        <f:selectItems value="#{ui.events}" var="e" itemValue="#{e.id}" itemLabel="#{e.title}"/>
+                    </h:selectOneMenu>
+                </h:outputLabel>
+                <p/>
+                <h:outputLabel for="title" value="Title:">
+                    <h:inputText id="title" size="100"/>
+                </h:outputLabel>
+                <p/>
+                <h:outputLabel for="comment" value="Comment:">
+                    <h:inputText id="comment" size="100"/>
+                </h:outputLabel>
+                <p/>
+                <h:outputLabel for="address" value="Address:">
+                    <h:inputText id="address" size="100"/>
+                </h:outputLabel>
+                <p/>
+                <h:commandButton action="#{sc.submitEvent}" value="Event"/>
+                <h:commandButton action="#{sc.submitComment}" value="Comment"/>
+            </h:form>
+        </ui:fragment>
+	</ui:define>
+</ui:composition>
+</html>

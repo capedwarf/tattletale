@@ -1,0 +1,176 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <parent>
+      <groupId>com.alterjoc</groupId>
+      <artifactId>radar-build</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+   </parent>
+
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.alterjoc</groupId>
+   <artifactId>radar-client</artifactId>
+   <version>1.0.0-SNAPSHOT</version>
+   <packaging>apk</packaging>
+   <name>Radar App Client</name>
+
+   <properties>
+      <lang>sl</lang>
+   </properties>
+
+   <build>
+      <finalName>${project.artifactId}</finalName>
+      <sourceDirectory>src</sourceDirectory>
+      <resources>
+         <resource>
+            <directory>src</directory>
+            <excludes>
+               <exclude>**/*.java</exclude>
+            </excludes>
+         </resource>
+      </resources>
+      <plugins>
+         <plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>2.4.3</version>
+            <executions>
+               <execution>
+                  <id>copy-resources</id>
+                  <!-- here the phase you need -->
+                  <phase>validate</phase>
+                  <goals>
+                     <goal>copy-resources</goal>
+                  </goals>
+                  <configuration>
+                     <outputDirectory>${project.build.directory}/generated-sources/selected-resources</outputDirectory>
+                     <resources>
+                        <resource>
+                           <directory>${project.basedir}/res</directory>
+                           <filtering>false</filtering>
+                           <excludes>
+                              <exclude>values-*/*</exclude>
+                              <exclude>values/strings.xml</exclude>
+                           </excludes>
+                        </resource>
+                     </resources>
+                  </configuration>
+               </execution>
+
+               <execution>
+                  <id>copy-strings</id>
+                  <!-- here the phase you need -->
+                  <phase>validate</phase>
+                  <goals>
+                     <goal>copy-resources</goal>
+                  </goals>
+                  <configuration>
+                     <outputDirectory>${project.build.directory}/generated-sources/selected-resources/values</outputDirectory>
+                     <resources>
+                        <resource>
+                           <directory>${project.basedir}/res/values-${lang}</directory>
+                           <filtering>false</filtering>
+                           <includes>
+                              <include>strings.xml</include>
+                           </includes>
+                        </resource>
+                     </resources>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+
+         <plugin>
+            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+            <artifactId>maven-android-plugin</artifactId>
+            <version>2.8.4</version>
+            <configuration>
+               <sdk>
+                  <path>${env.ANDROID_HOME}</path>
+                  <platform>3</platform>
+               </sdk>
+               <deleteConflictingFiles>true</deleteConflictingFiles>
+               <resourceDirectory>${project.build.directory}/generated-sources/selected-resources</resourceDirectory>
+            </configuration>
+            <extensions>true</extensions>
+         </plugin>
+
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3</version>
+            <configuration>
+               <source>1.5</source>
+               <target>1.5</target>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+   <dependencies>
+
+      <dependency>
+         <groupId>com.alterjoc</groupId>
+         <artifactId>radar-connect</artifactId>
+         <exclusions>
+            <exclusion>
+               <groupId>org.json</groupId>
+               <artifactId>json</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>javax.validation</groupId>
+               <artifactId>validation-api</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>org.apache.httpcomponents</groupId>
+               <artifactId>httpclient</artifactId>
+            </exclusion>
+            <!--
+               exclusion> <groupId>org.hibernate</groupId>
+               <artifactId>hibernate-validator</artifactId> </exclusion
+            -->
+         </exclusions>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.capedwarf.green</groupId>
+         <artifactId>capedwarf-sqlite</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>javax.validation</groupId>
+         <artifactId>validation-api</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>com.google.android</groupId>
+         <artifactId>android</artifactId>
+         <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.json</groupId>
+          <artifactId>json</artifactId>
+          <scope>provided</scope>
+      </dependency>
+
+      <!-- TODO - NOTE: you need to install Maps locally! -->
+
+      <dependency>
+         <groupId>com.google.android.maps</groupId>
+         <artifactId>maps</artifactId>
+         <scope>provided</scope>
+      </dependency>
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <scope>test</scope>
+      </dependency>
+   </dependencies>
+
+   <profiles>
+      <profile>
+         <id>en</id>
+         <properties>
+            <lang>en</lang>
+         </properties>
+      </profile>
+   </profiles>
+</project>

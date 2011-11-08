@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<queue-entries>
+  <queue>
+    <name>c2dm</name>
+    <rate>5/s</rate>
+  </queue>
+</queue-entries>

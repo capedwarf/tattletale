@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.alterjoc.radar.client" android:versionCode="2" android:versionName="1.0.1-SNAPSHOT" >
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-sdk android:minSdkVersion="3" />
+
+	<application android:debuggable="true" android:icon="@drawable/tozibaba"
+		android:label="@string/application_name" android:theme="@style/CustomButton">
+		<uses-library android:name="com.google.android.maps" />
+		<activity android:name=".EventsMapActivity" android:label="@string/tt_overview"
+			android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".EventListActivity" android:label="@string/tt_list"
+			android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".SettingsActivity" android:label="@string/tt_settings"
+			android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".PostEventActivity" android:label="@string/tt_publish_event"
+			android:configChanges="orientation|keyboardHidden" />
+
+		<activity android:name=".AddTopicActivity" android:label="@string/tt_add_channel"
+			android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".EditSubscriptionsActivity" android:label="@string/tt_edit_subscriptions"
+			android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".EventDetailsActivity" android:label="@string/tt_event_details"
+			android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".activities.locationpicker.LocationPickerActivity"
+			android:label="@string/tt_set_location" android:process=":LocationPickerProcess"
+			android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".login.WizardActivity" android:label="@string/tt_login" />
+		<activity android:name=".login.UserWizardActivity" android:label="@string/tt_login" />
+		<activity android:name=".login.NewUserActivity"	android:label="@string/tt_new_user"
+                  android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".login.LoginActivity" android:label="@string/tt_login"
+			android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.openintents.filemanager.FileManagerActivity"
+			android:label="@string/tt_select_file">
+			<intent-filter>
+				<action android:name="com.alterjoc.radar.client.PICK_FILE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".EventArchiveListActivity"
+			android:label="@string/tt_event_archive" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".AboutActivity" android:label="@string/tt_info"
+			android:configChanges="orientation|keyboardHidden" />
+
+		<activity android:name=".login.LostPasswordWizardActivity" android:label="@string/tt_lost_password" />
+		<activity android:name=".login.RecoverPasswordActivity"
+			android:label="@string/tt_password_recovery" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name=".login.RequestPassRecoveryActivity"
+			android:label="@string/tt_password_recovery_request" android:configChanges="orientation|keyboardHidden" />
+
+		<service android:name=".TozibabaService" />
+
+		<provider android:name="org.openintents.filemanager.FileManagerProvider"
+                  android:authorities="org.openintents.filemanager" />
+
+
+		<receiver android:name=".ProximityAlertReceiver" android:label="Proximity Alert Receiver" />
+
+		<!--86400000-->
+		<!-- Broadcast Receiver that will process AppWidget updates -->
+		<receiver android:name=".TozibabaWidget" android:label="@string/application_name">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/tozibaba_widget_provider" />
+		</receiver>
+
+		<!-- Service to perform web API queries -->
+		<service android:name=".TozibabaUpdateWidgetService" android:label="@string/application_name" />
+
+	</application>
+</manifest>

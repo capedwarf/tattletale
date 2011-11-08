@@ -1,0 +1,16 @@
+<beans
+   xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+
+   <interceptors>
+       <class>org.jboss.capedwarf.server.api.security.SecurityInterceptor</class>
+       <class>org.jboss.capedwarf.server.api.cache.CacheInterceptor</class>
+       <class>org.jboss.capedwarf.server.api.persistence.ProxyingInterceptor</class>
+       <class>org.jboss.capedwarf.server.api.tx.TxInterceptor</class>
+   </interceptors>
+
+   <alternatives>
+   </alternatives>
+
+</beans>

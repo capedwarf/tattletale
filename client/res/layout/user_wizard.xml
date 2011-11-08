@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_weight="0"
+		android:orientation="horizontal" android:background="#FFB7B7B7"
+		android:height="64px">
+		<ImageView android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:scaleType="center"
+			android:src="@drawable/tozibaba" />
+
+		<TextView android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:gravity="center" android:text="@string/user_preparation"
+			android:textSize="20dip" android:textColor="#FFFFFFFF" />
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1" android:orientation="vertical" android:background="#FFFFFFFF">
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_weight="0"
+			android:orientation="vertical" android:background="#FFFFFFFF">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:gravity="center_vertical|left"
+				android:text="@string/new_user" android:textSize="16dip"
+				android:textColor="#FF000000" android:paddingLeft="6dip"
+				android:paddingTop="15dip" android:paddingBottom="15dip" />
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+				android:orientation="horizontal">
+				<Button android:id="@+id/new_user_button" android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:text="@string/create"
+					android:padding="5dip" android:layout_weight="1" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:layout_weight="1" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_weight="0"  android:layout_marginTop="20dip"
+			android:orientation="vertical" android:background="#FFFFFFFF">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:gravity="center_vertical|left"
+				android:text="@string/existing_user" android:textSize="16dip"
+				android:textColor="#FF000000" android:paddingLeft="6dip"
+				android:paddingBottom="15dip" />
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+				android:orientation="horizontal">
+				<Button android:id="@+id/login_button" android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:text="@string/login"
+					android:padding="5dip" android:layout_weight="1" />
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:layout_weight="1" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+		android:layout_height="wrap_content" android:background="#FF000000"
+			android:layout_width="fill_parent">
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

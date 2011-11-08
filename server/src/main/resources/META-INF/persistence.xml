@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+    <persistence-unit name="radar">
+        <provider>org.datanucleus.store.appengine.jpa.DatastorePersistenceProvider</provider>
+        <class>org.jboss.capedwarf.server.api.domain.AbstractEntity</class>
+        <class>org.jboss.capedwarf.server.api.domain.TimestampedEntity</class>
+        <class>org.jboss.capedwarf.server.api.domain.GeoPt</class>
+        <class>org.jboss.capedwarf.server.api.domain.Version</class>
+        <class>com.alterjoc.radar.server.domain.AuditLog</class>
+        <class>com.alterjoc.radar.server.domain.Client</class>
+        <class>com.alterjoc.radar.server.domain.Comment</class>
+        <class>com.alterjoc.radar.server.domain.Event</class>
+        <class>com.alterjoc.radar.server.domain.Subscription</class>
+        <class>com.alterjoc.radar.server.domain.Topic</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="datanucleus.appengine.autoCreateDatastoreTxns" value="false"/>
+            <property name="datanucleus.cache.level2.type" value="javax.cache"/>
+            <property name="datanucleus.cache.level2.cacheName" value="DataNucleus"/>
+            <property name="datanucleus.cache.query.type" value="javax.cache"/>
+            <property name="datanucleus.cache.query.cacheName" value="DataNucleus-Query"/>
+            <property name="datanucleus.RetainValues " value="true"/>
+            <property name="datanucleus.cache.collections.lazy" value="false"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
+

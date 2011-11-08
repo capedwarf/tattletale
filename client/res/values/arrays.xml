@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_dialog_items">
+        <item>Prometni zastoj</item>
+        <item>Policijska kontrola</item>
+        <item>Znana osebnost</item>
+        <item>Kar nekaj...</item>
+    </string-array>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <display-name>Radar App</display-name>
+
+    <context-param>
+       <param-name>javax.faces.DEFAULT_SUFFIX</param-name>
+       <param-value>.xhtml</param-value>
+    </context-param>
+
+    <!-- GAE doesn't work with the Mojarra default startup -->
+    <context-param>
+       <param-name>com.sun.faces.enableMultiThreadedStartup</param-name>
+       <param-value>false</param-value>
+    </context-param>
+
+    <context-param>
+       <param-name>com.sun.faces.enableThreading</param-name>
+       <param-value>false</param-value>
+    </context-param>
+
+    <!-- Specify the expression factory manually, JSF can't find it from JSP in GAE -->
+    <context-param>
+      <param-name>com.sun.faces.expressionFactory</param-name>
+      <param-value>com.sun.el.ExpressionFactoryImpl</param-value>
+    </context-param>
+
+<!--
+    <context-param>
+       <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+       <param-value>client</param-value>
+    </context-param>
+-->
+
+    <context-param>
+      <param-name>javax.faces.PROJECT_STAGE</param-name>
+      <param-value>Production</param-value>
+    </context-param>
+
+    <!-- Listeners -->
+
+    <listener>
+       <listener-class>org.jboss.weld.environment.servlet.ExactListener</listener-class>
+    </listener>
+
+    <!-- Servlets -->
+
+    <servlet>
+       <servlet-name>Faces Servlet</servlet-name>
+       <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    </servlet>
+
+   <servlet>
+      <servlet-name>Multi Servlet</servlet-name>
+      <servlet-class>org.jboss.capedwarf.server.api.servlet.WeldServlet</servlet-class>
+        <init-param>
+            <param-name>request-handler</param-name>
+            <param-value>org.jboss.capedwarf.server.api.mvc.MultiRequestHandler</param-value>
+        </init-param>
+   </servlet>
+
+   <!-- Filters -->
+
+    <!-- filter>
+        <filter-name>Debug Filter</filter-name>
+        <filter-class>com.alterjoc.radar.server.servlet.DebugFilter</filter-class>
+    </filter -->
+
+    <filter>
+        <filter-name>Auth Filter</filter-name>
+        <filter-class>org.jboss.capedwarf.server.api.servlet.WeldServlet</filter-class>
+        <init-param>
+           <param-name>request-handler</param-name>
+           <param-value>com.alterjoc.radar.server.servlet.VerificationFilter</param-value>
+        </init-param>
+    </filter>
+
+    <filter>
+        <filter-name>Weld Filter</filter-name>
+        <filter-class>org.jboss.capedwarf.server.api.servlet.WeldFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>GZIP Filter</filter-name>
+        <filter-class>org.jboss.capedwarf.server.api.servlet.impl.GzipFilter</filter-class>
+    </filter>
+
+    <!-- Servlet mapping -->
+
+    <servlet-mapping>
+       <servlet-name>Faces Servlet</servlet-name>
+       <url-pattern>*.cdi</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+       <servlet-name>Multi Servlet</servlet-name>
+       <url-pattern>/client/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- Filter mapping -->
+
+    <!-- filter-mapping>
+       <filter-name>Debug Filter</filter-name>
+       <url-pattern>/*</url-pattern>
+    </filter-mapping -->
+
+    <filter-mapping>
+       <filter-name>Auth Filter</filter-name>
+       <url-pattern>/client/secure/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+       <filter-name>Weld Filter</filter-name>
+       <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+       <filter-name>GZIP Filter</filter-name>
+       <url-pattern>/client/*</url-pattern>
+    </filter-mapping>
+
+   <!-- Security -->
+
+   <security-constraint>
+       <web-resource-collection>
+           <web-resource-name>Profile requests</web-resource-name>
+           <url-pattern>/client/secure/*</url-pattern>
+       </web-resource-collection>
+       <user-data-constraint>
+           <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+       </user-data-constraint>
+   </security-constraint>
+
+    <!-- Welcome file -->
+
+   <welcome-file-list>
+       <welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+
+   <!-- Session config -->
+
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+
+</web-app>

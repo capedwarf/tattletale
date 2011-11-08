@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="template.xhtml">
+    <ui:define name="content">
+        <h:messages/>
+        <h1>Tožibaba SQL - <h:outputText value="#{login.user}"/></h1>
+        <ui:fragment rendered="#{login.editor}">                  
+            <h:form id="select">
+                <h:inputText id="query" size="80"/>
+                <h:commandButton action="#{sql.executeSelect}" value="Select"/>
+            </h:form>
+        </ui:fragment>
+        <p/>
+        <ui:fragment rendered="#{login.admin}">
+            <h:form id="delete">
+                <h:inputText id="query" size="80"/>
+                <h:commandButton action="#{sql.executeDelete}" value="Delete"/>
+            </h:form>
+        </ui:fragment>
+        <p/>
+        <p/>
+        -------------------------------
+        <p/>
+        <p/>
+        <ui:fragment rendered="#{sql.size > 0}">
+            <h:dataTable value="#{sql.results}" var="e">
+                <h:column>
+                    <f:facet name="header">Id</f:facet>
+                    <h:outputText value="#{e.id}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Entity</f:facet>
+                    [<h:outputText value="#{e.info}" />]
+                </h:column>
+            </h:dataTable>
+        </ui:fragment>
+        <ui:fragment rendered="#{sql.count >= 0}">
+            Deleted: <h:outputText value="${sql.count}"/>
+        </ui:fragment>
+    </ui:define>
+</ui:composition>
+</html>

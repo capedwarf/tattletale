@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core">
+
+   <ui:composition template="/template.xhtml">
+      <ui:define name="sidebar">
+          <h:form>
+              <h:commandLink action="#{LoginHandler.login}" value="Login" />
+          </h:form>
+      </ui:define>
+      <ui:define name="content">
+          Tožibaba -- 2010
+          <p/>
+          <ul>
+              <ui:fragment rendered="#{login.admin}">
+                  <li><h:outputLink value="/system.cdi">System</h:outputLink></li>
+              </ui:fragment>
+              <ui:fragment rendered="#{login.editor}">
+                  <li><h:outputLink value="/topics.cdi">Topics</h:outputLink></li>
+              </ui:fragment>
+              <ui:fragment rendered="#{login.admin}">
+                  <li><h:outputLink value="/caches.cdi">Caches</h:outputLink></li>
+              </ui:fragment>
+              <ui:fragment rendered="#{login.editor}">                  
+                  <li><h:outputLink value="/sqls.cdi">SQL</h:outputLink></li>
+              </ui:fragment>
+          </ul>
+      </ui:define>
+   </ui:composition>
+</html>

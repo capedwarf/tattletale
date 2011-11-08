@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_weight="0"
+		android:orientation="horizontal" android:background="#FFB7B7B7"
+		android:height="64px">
+		<!-- android:background="#FFCCCCCC" -->
+		<ImageView android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:scaleType="center"
+			android:src="@drawable/tozibaba" />
+
+		<TextView android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:gravity="center" android:text="@string/new_user"
+			android:textSize="20dip" android:textColor="#FFFFFFFF" />
+		<!-- android:textColor="#FF000000" -->
+	</LinearLayout>
+
+
+
+
+	<!--
+		<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_weight="1"
+		android:background="#FFFFFFFF" > </LinearLayout>
+	-->
+
+	<!-- CUT HERE ::  -->
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1" android:orientation="vertical" android:background="#FFFFFFFF">
+		
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:gravity="center_vertical|left"
+				android:text="Uporabniško ime" android:textSize="16dip"
+				android:textColor="#FF000000" android:paddingLeft="6dip"
+				android:paddingTop="15dip" android:paddingBottom="15dip" />
+
+			<EditText android:id="@+id/username" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:gravity="center_vertical|left"
+				android:textSize="16dip"
+				android:textColor="#FF000000" android:paddingLeft="6dip" />
+
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:gravity="center_vertical|left"
+				android:text="Geslo" android:textSize="16dip"
+				android:textColor="#FF000000" android:paddingLeft="6dip"
+				android:paddingTop="15dip" android:paddingBottom="15dip" />
+
+			<EditText android:id="@+id/password" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:gravity="center_vertical|left"
+				android:textSize="16dip"
+				android:textColor="#FF000000" android:paddingLeft="6dip"
+				android:password="true" />
+
+	</LinearLayout>
+
+
+
+
+	<!-- :: CUT HERE -->
+
+
+
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_weight="0"
+		android:orientation="horizontal" android:background="@drawable/wizard_footer_grad_1"
+		android:height="64px">
+		<!-- android:background="@drawable/wizard_footer_bkg_composite" -->
+		<!-- android:background="@drawable/wizard_footer_grad_1" -->
+		<!-- android:background="#FFB7B7B7" -->
+		<Button android:id="@+id/back_button" android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:layout_margin="5px"
+			android:layout_weight="1" android:text="@string/back"
+			android:drawableLeft="@android:drawable/arrow_down_float"
+			android:padding="5px" />
+
+		<Button android:id="@+id/continue_button" android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:layout_margin="5px"
+			android:layout_weight="1" android:text="@string/m_continue"
+			android:drawableRight="@android:drawable/arrow_up_float"
+			android:padding="5px" />
+
+	</LinearLayout>
+</LinearLayout>

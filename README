@@ -1,4 +1,6 @@
 This is a CapeDwarf Green based example app.
-It can be run in two flavors - GAE or JEE.
-By default we use GAE, to test CapeDwarf Blue.
+It can be run in three flavors (branches) - CapeDwarf, GAE or JEE.
+By default (in master) we use CapeDwarf, to test CapeDwarf Blue.
 
+Note: client module needs Google Maps to be manually installed into local Maven repo
+(see main and client pom.xml for more details)

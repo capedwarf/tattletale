@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns="http://jboss.com/arquillian"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:appengine="urn:arq:org.jboss.arquillian.container.appengine.embedded_1_3">
+
+   <appengine:container>
+      <appengine:bindHttpPort>8080</appengine:bindHttpPort>
+   </appengine:container>
+
+</arquillian>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <display-name>Mapper test</display-name>
+
+    <servlet>
+      <servlet-name>mapreduce</servlet-name>
+       <servlet-class>com.alterjoc.test.radar.server.support.MockMapperServlet</servlet-class>
+      <load-on-startup>1</load-on-startup>
+    </servlet>
+
+	<servlet>
+		<servlet-name>Event Servlet</servlet-name>
+		<servlet-class>com.alterjoc.test.radar.server.support.MockInitialPingServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+    <servlet-mapping>
+      <servlet-name>mapreduce</servlet-name>
+      <url-pattern>/mapreduce/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Event Servlet</servlet-name>
+        <url-pattern>/client/event-initial</url-pattern>
+    </servlet-mapping>
+
+   <!-- Security -->
+
+<!--    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Mapper tasks</web-resource-name>
+            <url-pattern>/mapper/start</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>-->
+
+   <!-- Session config -->
+
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+
+</web-app>
