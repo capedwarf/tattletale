@@ -22,14 +22,15 @@
   </modules>
 
   <properties>
-    <version.org.jboss.capedwarf>1.0.0.Beta13</version.org.jboss.capedwarf>
+    <version.org.jboss.capedwarf>1.0.0-SNAPSHOT</version.org.jboss.capedwarf>
     <version.com.google.android>1.5_r4</version.com.google.android>
     <version.com.google.android.maps>3_r3</version.com.google.android.maps>
     <version.com.google.guava>1.0.0.R05</version.com.google.guava>
     <version.json>20090211</version.json>
-    <version.org.jboss.weld.servlet>1.1.2.Final</version.org.jboss.weld.servlet>
+    <version.org.jboss.weld.servlet>1.1.4.Final</version.org.jboss.weld.servlet>
     <version.org.jboss.logging>3.0.1.GA</version.org.jboss.logging>
     <version.javax.validation>1.0.0.GA</version.javax.validation>
+    <version.javax.cache>1.0-dev-2</version.javax.cache>
     <version.javax.servlet>2.5</version.javax.servlet>
     <version.javax.servlet.jsp>2.1</version.javax.servlet.jsp>
     <version.javax.faces.api>2.0.0.Beta1</version.javax.faces.api>
@@ -369,6 +370,12 @@
            <artifactId>datanucleus-cache</artifactId>
            <version>${version.org.datanucleus.cache}</version>
        </dependency>
+
+        <dependency>
+            <groupId>jcache</groupId>
+            <artifactId>jcache</artifactId>
+            <version>${version.javax.cache}</version>
+        </dependency>
 
         <!--JBoss Weld / CDI -->
 
