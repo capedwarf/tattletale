@@ -38,7 +38,7 @@ public class Client extends TimestampedEntity
    // app reg id
    private String registrationId;
    // android version; 2.2+ or 2.1, ...
-   private Version version;
+   private Version version = Version.DEFAULT_VERSION;
 
    @Size(min = 3, max = 20)
    @Pattern(regexp = Constants.USERNAME_REGEXP)

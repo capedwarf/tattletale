@@ -125,7 +125,7 @@
 
    <!-- Security -->
 
-   <security-constraint>
+   <!-- security-constraint>
        <web-resource-collection>
            <web-resource-name>Profile requests</web-resource-name>
            <url-pattern>/client/secure/*</url-pattern>
@@ -133,7 +133,7 @@
        <user-data-constraint>
            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
        </user-data-constraint>
-   </security-constraint>
+   </security-constraint -->
 
     <!-- Welcome file -->
 

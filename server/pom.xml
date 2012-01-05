@@ -66,7 +66,13 @@
 
        <dependency>
            <groupId>org.jboss.capedwarf.green</groupId>
-           <artifactId>capedwarf-jpa</artifactId>
+           <artifactId>capedwarf-jpa2</artifactId>
+           <exclusions>
+               <exclusion>
+                   <groupId>org.apache.geronimo.specs</groupId>
+                   <artifactId>geronimo-jpa_3.0_spec</artifactId>
+               </exclusion>
+           </exclusions>
        </dependency>
 
        <!-- dependency>
@@ -81,8 +87,32 @@
            <artifactId>capedwarf-server-gae</artifactId>
            <exclusions>
                <exclusion>
+                   <groupId>javax.enterprise</groupId>
+                   <artifactId>cdi-api</artifactId>
+               </exclusion>
+               <exclusion>
+                   <groupId>org.javassist</groupId>
+                   <artifactId>javassist</artifactId>
+               </exclusion>
+               <exclusion>
+                   <groupId>org.apache.geronimo.specs</groupId>
+                   <artifactId>geronimo-jpa_3.0_spec</artifactId>
+               </exclusion>
+               <exclusion>
+                   <groupId>org.apache.geronimo.specs</groupId>
+                   <artifactId>geronimo-jta_1.1_spec</artifactId>
+               </exclusion>
+               <exclusion>
                    <groupId>org.jboss.capedwarf.green</groupId>
                    <artifactId>capedwarf-social</artifactId>
+               </exclusion>
+               <exclusion>
+                   <groupId>org.slf4j</groupId>
+                   <artifactId>slf4j-jdk14</artifactId>
+               </exclusion>
+               <exclusion>
+                   <groupId>org.datanucleus</groupId>
+                   <artifactId>datanucleus-core</artifactId>
                </exclusion>
                <exclusion>
                    <groupId>jcache</groupId>
@@ -109,6 +139,12 @@
                    <artifactId>appengine-api-labs</artifactId>
                </exclusion>
            </exclusions>
+       </dependency>
+
+       <dependency>
+           <groupId>com.google.appengine</groupId>
+           <artifactId>geronimo-jpa_3.0_spec</artifactId>
+           <scope>provided</scope>
        </dependency>
 
     <dependency>
@@ -158,39 +194,50 @@
                  <groupId>javassist</groupId>
                  <artifactId>javassist</artifactId>
              </exclusion>
-             </exclusions>
+        </exclusions>
+        <scope>provided</scope>
       </dependency>
-      <dependency>
+
+       <dependency>
          <groupId>org.jboss.logging</groupId>
          <artifactId>jboss-logging</artifactId>
          <scope>provided</scope>
       </dependency>
+
       <dependency>
          <groupId>javax.validation</groupId>
          <artifactId>validation-api</artifactId>
+          <scope>provided</scope>
       </dependency>
+
       <dependency>
           <groupId>org.jboss.spec.javax.faces</groupId>
           <artifactId>jboss-jsf-api_2.1_spec</artifactId>
+          <scope>provided</scope>
       </dependency>
+
       <dependency>
           <groupId>com.sun.faces</groupId>
           <artifactId>jsf-impl</artifactId>
           <scope>provided</scope>
       </dependency>
+
       <dependency>
           <groupId>javax.el</groupId>
           <artifactId>el-api</artifactId>
-          <scope>runtime</scope>
+          <scope>provided</scope>
       </dependency>
-      <dependency>
+
+       <!-- dependency>
          <groupId>javax.el</groupId>
          <artifactId>el-ri</artifactId>
       </dependency>
+
       <dependency>
           <groupId>org.datanucleus</groupId>
           <artifactId>datanucleus-cache</artifactId>
       </dependency>
+
       <dependency>
           <groupId>org.datanucleus</groupId>
           <artifactId>datanucleus-jpa</artifactId>
@@ -202,6 +249,7 @@
           </exclusions>
           <scope>runtime</scope>
       </dependency>
+
       <dependency>
           <groupId>org.datanucleus</groupId>
           <artifactId>datanucleus-core</artifactId>
@@ -213,19 +261,27 @@
           </exclusions>
           <scope>runtime</scope>
       </dependency>
+
       <dependency>
           <groupId>com.google.appengine.orm</groupId>
           <artifactId>datanucleus-appengine</artifactId>
       </dependency>
+
       <dependency>
           <groupId>com.google.appengine</groupId>
           <artifactId>jdo2-api</artifactId>
           <scope>compile</scope>
-      </dependency>
+      </dependency -->
+
       <dependency>
           <groupId>jcache</groupId>
           <artifactId>jcache</artifactId>
       </dependency>
+
+       <dependency>
+           <groupId>oswego-concurrent</groupId>
+           <artifactId>concurrent</artifactId>
+       </dependency>
 
       <dependency>
          <groupId>junit</groupId>
