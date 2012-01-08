@@ -4,10 +4,8 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
         http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
 
-    <!-- TODO fix this - leave it GAE like -->
     <persistence-unit name="radar">
-        <!-- provider>org.datanucleus.store.appengine.jpa.DatastorePersistenceProvider</provider -->
-        <non-jta-data-source>java:jboss/datasources/ExampleDS</non-jta-data-source>
+        <provider>org.datanucleus.store.appengine.jpa.DatastorePersistenceProvider</provider>
         <class>org.jboss.capedwarf.server.api.domain.AbstractEntity</class>
         <class>org.jboss.capedwarf.server.api.domain.TimestampedEntity</class>
         <class>org.jboss.capedwarf.server.api.domain.GeoPt</class>
@@ -20,11 +18,6 @@
         <class>com.alterjoc.radar.server.domain.Topic</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
-            <property name="hibernate.show_sql" value="false"/>
-            <property name="hibernate.format_sql" value="true"/>
-
             <property name="datanucleus.NontransactionalRead" value="true"/>
             <property name="datanucleus.NontransactionalWrite" value="true"/>
             <property name="datanucleus.ConnectionURL" value="appengine"/>
