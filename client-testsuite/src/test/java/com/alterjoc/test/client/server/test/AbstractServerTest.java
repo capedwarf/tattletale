@@ -1,8 +1,5 @@
 package com.alterjoc.test.client.server.test;
 
-import java.lang.reflect.Method;
-import java.net.URL;
-
 import com.alterjoc.radar.connect.server.ServerProxy;
 import com.alterjoc.test.client.server.support.RadarConfiguration;
 import org.jboss.capedwarf.common.data.LoginInfo;
@@ -15,6 +12,9 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
+
+import java.lang.reflect.Method;
+import java.net.URL;
 
 /**
  * Abstract server test.
@@ -53,6 +53,27 @@ public abstract class AbstractServerTest
       ServerTestDelegate std = getDelegate(getClass());
       return ServerProxyFactory.create(std.configuration());
    }
+
+/*
+      return ServerProxyFactory.create(new DebugProxyHandler(std.configuration()), ServerProxy.class);
+   }
+
+   protected class DebugProxyHandler extends ServerProxyHandler {
+       public X(Configuration config) {
+           super(config);
+       }
+
+       @Override
+       protected Object toValue(Method method, InputStream content) throws Throwable {
+           ByteArrayOutputStream baos = new ByteArrayOutputStream();
+           IOUtils.copyAndClose(content, baos);
+           byte[] buf = baos.toByteArray();
+           // System.out.println("content = " + new String(buf));
+           ByteArrayInputStream stream = new ByteArrayInputStream(buf);
+           return super.toValue(method, stream);
+       }
+   }
+*/
 
    protected void doDestroy()
    {
