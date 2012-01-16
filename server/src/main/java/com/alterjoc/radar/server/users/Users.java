@@ -2,7 +2,7 @@ package com.alterjoc.radar.server.users;
 
 import com.alterjoc.radar.server.dao.ClientDAO;
 import com.alterjoc.radar.server.domain.Client;
-import org.jboss.capedwarf.server.api.quilifiers.Current;
+import org.jboss.capedwarf.server.api.qualifiers.Current;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;

@@ -1,5 +1,3 @@
-com.alterjoc.radar.server.channel.Channel
-com.alterjoc.radar.server.channel.ChannelToken
 com.alterjoc.radar.server.dao.impl.AuditLogDAOImpl
 com.alterjoc.radar.server.dao.impl.ClientDAOImpl
 com.alterjoc.radar.server.dao.impl.CommentDAOImpl
@@ -35,7 +33,7 @@ com.alterjoc.radar.server.mvc.impl.TopicController
 com.alterjoc.radar.server.mvc.impl.TopicEventsTsAction
 com.alterjoc.radar.server.mvc.impl.TopicPath2Controller
 com.alterjoc.radar.server.persistence.PUInfo
-com.alterjoc.radar.server.servlet.impl.VerificationFilter
+com.alterjoc.radar.server.servlet.VerificationFilter
 com.alterjoc.radar.server.topics.impl.SimpleTopicManager
 com.alterjoc.radar.server.ui.SystemCommand
 com.alterjoc.radar.server.ui.TopicCommand
@@ -53,7 +51,6 @@ org.jboss.capedwarf.server.api.cache.CacheFactoryProvider
 org.jboss.capedwarf.server.api.cache.CacheInterceptor
 org.jboss.capedwarf.server.api.cache.CacheManagerProvider
 org.jboss.capedwarf.server.api.cache.CacheProvider
-org.jboss.capedwarf.server.api.cache.impl.CacheConfigImpl
 org.jboss.capedwarf.server.api.cache.PersistenceCache
 org.jboss.capedwarf.server.api.cache.impl.NoopCacheExceptionHandler
 org.jboss.capedwarf.server.api.dao.impl.AbstractGenericDAO
@@ -86,7 +83,7 @@ org.jboss.capedwarf.server.api.ui.Login
 org.jboss.capedwarf.server.api.ui.SqlCommand
 org.jboss.capedwarf.server.api.utils.impl.SystemTimestampProvider
 org.jboss.capedwarf.server.api.validation.PersistenceValidation
-org.jboss.capedwarf.social.facebook.FacebookObserver
+# org.jboss.capedwarf.social.facebook.FacebookObserver
 # GAE
 org.jboss.capedwarf.server.gae.cache.CacheConfigImpl
 org.jboss.capedwarf.server.gae.cache.DatanucleusCacheEntryLookupFactory
@@ -99,4 +96,3 @@ org.jboss.capedwarf.server.gae.tx.TransactionInterceptor
 org.jboss.capedwarf.server.gae.tx.TxEMInjector
 org.jboss.capedwarf.server.gae.users.Users
 org.jboss.capedwarf.server.gae.validation.CdiValidationFactoryProvider
-

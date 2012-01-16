@@ -3,7 +3,7 @@ package com.alterjoc.radar.server.mvc.impl;
 import com.alterjoc.radar.server.events.EventManager;
 import org.jboss.capedwarf.common.data.StatusInfo;
 import org.jboss.capedwarf.server.api.mvc.impl.StatusInfoAbstractAction;
-import org.jboss.capedwarf.server.api.quilifiers.Current;
+import org.jboss.capedwarf.server.api.qualifiers.Current;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;

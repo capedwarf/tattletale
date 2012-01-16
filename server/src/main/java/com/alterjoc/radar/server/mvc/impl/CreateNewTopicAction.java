@@ -7,7 +7,7 @@ import com.alterjoc.radar.server.users.Limits;
 import org.jboss.capedwarf.common.data.Status;
 import org.jboss.capedwarf.common.data.StatusInfo;
 import org.jboss.capedwarf.server.api.mvc.impl.StatusInfoAbstractAction;
-import org.jboss.capedwarf.server.api.quilifiers.Current;
+import org.jboss.capedwarf.server.api.qualifiers.Current;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;

@@ -23,7 +23,7 @@ import org.jboss.capedwarf.common.data.StatusInfo;
 import org.jboss.capedwarf.common.social.SocialEvent;
 import org.jboss.capedwarf.server.api.domain.GeoPt;
 import org.jboss.capedwarf.server.api.io.BlobService;
-import org.jboss.capedwarf.server.api.quilifiers.Name;
+import org.jboss.capedwarf.server.api.qualifiers.Name;
 
 /**
  * Abstract event manager.

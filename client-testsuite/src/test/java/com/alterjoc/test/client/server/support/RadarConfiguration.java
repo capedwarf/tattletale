@@ -35,6 +35,6 @@ public class RadarConfiguration extends DefaultConfiguration<ServerProxy>
       setProxyClass(ServerProxy.class);
       setDebugMode(debug);
       setSslPort(8080);
-      setAppContext("radar-server-1.0.0-SNAPSHOT");
+      setAppContext("");
    }
 }

@@ -3,7 +3,7 @@ package com.alterjoc.radar.server.mvc.impl;
 import com.alterjoc.radar.server.dao.TopicDAO;
 import com.alterjoc.radar.server.domain.Client;
 import com.alterjoc.radar.server.domain.Topic;
-import org.jboss.capedwarf.server.api.quilifiers.Current;
+import org.jboss.capedwarf.server.api.qualifiers.Current;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;

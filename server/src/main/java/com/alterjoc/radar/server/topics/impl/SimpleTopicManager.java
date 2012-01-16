@@ -21,7 +21,7 @@ import org.jboss.capedwarf.common.data.Type;
 import org.jboss.capedwarf.server.api.io.BlobService;
 import org.jboss.capedwarf.server.api.io.ResourceReader;
 import org.jboss.capedwarf.server.api.mail.MailManager;
-import org.jboss.capedwarf.server.api.quilifiers.Name;
+import org.jboss.capedwarf.server.api.qualifiers.Name;
 import org.jboss.capedwarf.server.api.tx.Transactional;
 import org.jboss.capedwarf.server.api.utils.TimestampProvider;
 

@@ -5,7 +5,7 @@ import com.alterjoc.radar.server.domain.Client;
 import org.jboss.capedwarf.common.data.Status;
 import org.jboss.capedwarf.server.api.mail.MailManager;
 import org.jboss.capedwarf.server.api.mvc.ResultAbstractAction;
-import org.jboss.capedwarf.server.api.quilifiers.Name;
+import org.jboss.capedwarf.server.api.qualifiers.Name;
 
 import javax.cache.Cache;
 import javax.inject.Inject;

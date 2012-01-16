@@ -12,8 +12,8 @@ import org.jboss.capedwarf.common.data.Status;
 import org.jboss.capedwarf.common.data.StatusInfo;
 import org.jboss.capedwarf.common.social.SocialEvent;
 import org.jboss.capedwarf.server.api.mvc.impl.StatusInfoAbstractAction;
-import org.jboss.capedwarf.server.api.quilifiers.Current;
-import org.jboss.capedwarf.server.api.quilifiers.Name;
+import org.jboss.capedwarf.server.api.qualifiers.Current;
+import org.jboss.capedwarf.server.api.qualifiers.Name;
 
 import javax.cache.Cache;
 import javax.inject.Inject;

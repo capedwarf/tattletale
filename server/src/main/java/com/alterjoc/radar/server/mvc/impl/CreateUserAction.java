@@ -20,7 +20,7 @@ import org.jboss.capedwarf.common.data.Status;
 import org.jboss.capedwarf.common.data.UserInfo;
 import org.jboss.capedwarf.server.api.admin.AdminManager;
 import org.jboss.capedwarf.server.api.mvc.impl.StatusInfoAbstractAction;
-import org.jboss.capedwarf.server.api.quilifiers.Name;
+import org.jboss.capedwarf.server.api.qualifiers.Name;
 import org.jboss.capedwarf.server.api.security.SecurityProvider;
 
 /**
