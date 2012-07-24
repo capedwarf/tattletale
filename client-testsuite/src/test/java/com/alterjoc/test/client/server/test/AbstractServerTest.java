@@ -183,7 +183,6 @@ public abstract class AbstractServerTest
       }
       catch (Exception ignored)
       {
-          ignored.printStackTrace();
       }
    }
 

@@ -277,8 +277,9 @@
       </dependency>
 
       <dependency>
-          <groupId>javax.cache</groupId>
-          <artifactId>cache-api</artifactId>
+          <groupId>jcache</groupId>
+          <artifactId>jcache</artifactId>
+          <scope>provided</scope>
       </dependency>
 
       <dependency>

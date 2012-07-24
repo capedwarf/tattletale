@@ -31,7 +31,7 @@
     <version.org.jboss.weld.servlet>1.1.8.Final</version.org.jboss.weld.servlet>
     <version.org.jboss.logging>3.1.1.GA</version.org.jboss.logging>
     <version.javax.validation>1.0.0.GA</version.javax.validation>
-    <version.javax.cache>0.5</version.javax.cache>
+    <version.javax.cache>1.0-dev-2</version.javax.cache>
     <version.javax.servlet>2.5</version.javax.servlet>
     <version.javax.servlet.jsp>2.1</version.javax.servlet.jsp>
     <version.javax.faces.api>2.0.0.Beta1</version.javax.faces.api>
@@ -378,9 +378,10 @@
        </dependency>
 
         <dependency>
-            <groupId>javax.cache</groupId>
-            <artifactId>cache-api</artifactId>
+            <groupId>jcache</groupId>
+            <artifactId>jcache</artifactId>
             <version>${version.javax.cache}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!--JBoss Weld / CDI -->
