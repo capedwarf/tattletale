@@ -5,7 +5,7 @@
         http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
 
     <persistence-unit name="radar">
-        <provider>org.datanucleus.store.appengine.jpa.DatastorePersistenceProvider</provider>
+        <provider>org.datanucleus.api.jpa.PersistenceProviderImpl</provider>
         <class>org.jboss.capedwarf.server.api.domain.AbstractEntity</class>
         <class>org.jboss.capedwarf.server.api.domain.TimestampedEntity</class>
         <class>org.jboss.capedwarf.server.api.domain.GeoPt</class>
@@ -22,10 +22,11 @@
             <property name="datanucleus.NontransactionalWrite" value="true"/>
             <property name="datanucleus.ConnectionURL" value="appengine"/>
             <property name="datanucleus.appengine.autoCreateDatastoreTxns" value="false"/>
-            <property name="datanucleus.cache.level2.type" value="javax.cache"/>
+            <!-- Cannot use javax.cache, since GAE uses diff version that DN' JavaxCache -->
+            <!-- property name="datanucleus.cache.level2.type" value="javax.cache"/>
             <property name="datanucleus.cache.level2.cacheName" value="DataNucleus"/>
             <property name="datanucleus.cache.query.type" value="javax.cache"/>
-            <property name="datanucleus.cache.query.cacheName" value="DataNucleus-Query"/>
+            <property name="datanucleus.cache.query.cacheName" value="DataNucleus-Query"/ -->
             <property name="datanucleus.RetainValues " value="true"/>
             <property name="datanucleus.cache.collections.lazy" value="false"/>
         </properties>

@@ -9,9 +9,8 @@ import com.alterjoc.radar.common.data.EventInfo;
 import com.alterjoc.radar.server.domain.Event;
 import com.alterjoc.test.radar.server.AbstractTest;
 import com.alterjoc.test.radar.server.support.MockInitialPingServlet;
-import org.jboss.arquillian.api.Deployment;
-import org.jboss.arquillian.api.Run;
-import org.jboss.arquillian.api.RunModeType;
+import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.container.test.api.RunAsClient;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.capedwarf.common.dto.Timestamped;
 import org.jboss.capedwarf.common.env.EnvironmentFactory;
@@ -36,7 +35,7 @@ import org.junit.runner.RunWith;
  * @author <a href="mailto:ales.justin@jboss.org">Ales Justin</a>
  */
 @RunWith(Arquillian.class)
-@Run(RunModeType.AS_CLIENT)
+@RunAsClient
 public class MapperTestCase extends AbstractTest
 {
    @Deployment
@@ -66,9 +65,9 @@ public class MapperTestCase extends AbstractTest
       webArchive.setWebXML(webXml);
       // appengine config
       URL appEngineXml = getResource("/appengine/WEB-INF/appengine-web.xml");
-      webArchive.addWebResource(appEngineXml, "appengine-web.xml");
+      webArchive.addAsWebResource(appEngineXml, "appengine-web.xml");
       URL logging = getResource("/appengine/WEB-INF/logging.properties");
-      webArchive.addWebResource(logging, "logging.properties");
+      webArchive.addAsWebResource(logging, "logging.properties");
       return webArchive;
    }
 

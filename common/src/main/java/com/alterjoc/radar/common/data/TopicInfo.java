@@ -56,8 +56,8 @@ public class TopicInfo extends Timestamped
         super.readJSONObject(json);
         name = json.getString("name");
         description = json.optString("desc");
-        type = JSONUtils.readEnum(json, "type", null, Type.values());
-        mode = JSONUtils.readEnum(json, "mode", null, Mode.values());
+        type = JSONUtils.readEnum(json, "type", null, Type.class);
+        mode = JSONUtils.readEnum(json, "mode", null, Mode.class);
         photo = JSONUtils.readArray(json, "photo");
     }
 

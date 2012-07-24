@@ -3,6 +3,7 @@
 *.ipr
 *.iws
 target
+client/gen
 client/target
 client-testsuite/target
 common/target

@@ -90,7 +90,7 @@ public class EventInfo extends PhotoInfo {
         longitude = json.getInt("longitude");
         address = json.optString("address");
         username = json.optString("username");
-        type = JSONUtils.readEnum(json, "type", null, Type.values());
+        type = JSONUtils.readEnum(json, "type", null, Type.class);
 
         smallPhoto = JSONUtils.readArray(json, "smallPhoto");
 

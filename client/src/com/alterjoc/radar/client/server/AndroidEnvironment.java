@@ -92,7 +92,12 @@ public class AndroidEnvironment implements Environment
       return new HackJSONObject();
    }
 
-   public JSONTokener createTokener(InputStream is) throws IOException
+   public JSONObject createObject(JSONTokener tokener) throws JSONException
+   {
+      return new HackJSONObject(tokener);
+   }
+
+    public JSONTokener createTokener(InputStream is) throws IOException
    {
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       int ch;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+
 import javax.persistence.Query;
 
 import com.alterjoc.radar.common.Constants;
@@ -16,7 +17,6 @@ import org.jboss.capedwarf.common.data.Type;
 import org.jboss.capedwarf.jpa.ProxyingEnum;
 import org.jboss.capedwarf.server.api.cache.Cacheable;
 import org.jboss.capedwarf.server.api.cache.SingleKeyStrategy;
-import org.jboss.capedwarf.server.api.dao.impl.AbstractTimestampedDAO;
 import org.jboss.capedwarf.server.api.dao.impl.TimestampedListKeyStrategy;
 import org.jboss.capedwarf.server.api.persistence.Proxying;
 import org.jboss.capedwarf.server.api.tx.TransactionPropagationType;
@@ -27,7 +27,7 @@ import org.jboss.capedwarf.server.api.tx.Transactional;
  *
  * @author <a href="mailto:ales.justin@jboss.org">Ales Justin</a>
  */
-public class TopicDAOImpl extends AbstractTimestampedDAO<Topic> implements TopicDAO
+public class TopicDAOImpl extends HackDAO<Topic> implements TopicDAO
 {
    protected Class<Topic> entityClass()
    {

@@ -1,25 +1,25 @@
 package com.alterjoc.radar.server.dao.impl;
 
+import java.util.List;
+
+import javax.persistence.Query;
+
 import com.alterjoc.radar.common.Constants;
 import com.alterjoc.radar.server.dao.CommentDAO;
 import com.alterjoc.radar.server.domain.Comment;
 import org.jboss.capedwarf.jpa.ProxyingEnum;
 import org.jboss.capedwarf.server.api.cache.Cacheable;
-import org.jboss.capedwarf.server.api.dao.impl.AbstractTimestampedDAO;
 import org.jboss.capedwarf.server.api.dao.impl.TimestampedListKeyStrategy;
 import org.jboss.capedwarf.server.api.persistence.Proxying;
 import org.jboss.capedwarf.server.api.tx.TransactionPropagationType;
 import org.jboss.capedwarf.server.api.tx.Transactional;
-
-import javax.persistence.Query;
-import java.util.List;
 
 /**
  * Comment DAO impl.
  *
  * @author <a href="mailto:ales.justin@jboss.org">Ales Justin</a>
  */
-public class CommentDAOImpl extends AbstractTimestampedDAO<Comment> implements CommentDAO
+public class CommentDAOImpl extends HackDAO<Comment> implements CommentDAO
 {
    protected Class<Comment> entityClass()
    {

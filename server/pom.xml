@@ -18,7 +18,7 @@
        <plugin>
           <groupId>org.datanucleus</groupId>
           <artifactId>maven-datanucleus-plugin</artifactId>
-          <version>2.0.1</version>
+          <version>3.1.0-m3</version>
           <configuration>
              <metadataIncludes>com/alterjoc/radar/server/domain/*.class</metadataIncludes>
              <verbose>true</verbose>
@@ -147,8 +147,8 @@
        </dependency>
 
        <dependency>
-           <groupId>com.google.appengine</groupId>
-           <artifactId>geronimo-jpa_3.0_spec</artifactId>
+           <groupId>org.apache.geronimo.specs</groupId>
+           <artifactId>geronimo-jpa_2.0_spec</artifactId>
        </dependency>
 
        <dependency>
@@ -244,14 +244,13 @@
 
       <dependency>
           <groupId>org.datanucleus</groupId>
-          <artifactId>datanucleus-jpa</artifactId>
+          <artifactId>datanucleus-api-jpa</artifactId>
           <exclusions>
              <exclusion>
                 <groupId>org.apache.geronimo.specs</groupId>
                 <artifactId>geronimo-jpa_3.0_spec</artifactId>
              </exclusion>
           </exclusions>
-          <scope>runtime</scope>
       </dependency>
 
       <dependency>
@@ -272,15 +271,14 @@
       </dependency>
 
       <dependency>
-          <groupId>com.google.appengine</groupId>
-          <artifactId>jdo2-api</artifactId>
+          <groupId>javax.jdo</groupId>
+          <artifactId>jdo-api</artifactId>
           <scope>compile</scope>
       </dependency>
 
       <dependency>
-          <groupId>jcache</groupId>
-          <artifactId>jcache</artifactId>
-          <scope>provided</scope>
+          <groupId>javax.cache</groupId>
+          <artifactId>cache-api</artifactId>
       </dependency>
 
       <dependency>
@@ -289,9 +287,9 @@
           <scope>test</scope>
       </dependency>
      <dependency>
-        <groupId>org.jboss.arquillian</groupId>
-        <artifactId>arquillian-junit</artifactId>
-        <scope>test</scope>
+         <groupId>org.jboss.arquillian.junit</groupId>
+         <artifactId>arquillian-junit-container</artifactId>
+         <scope>test</scope>
      </dependency>
      <!--dependency>
           <groupId>org.jboss.arquillian.container</groupId>

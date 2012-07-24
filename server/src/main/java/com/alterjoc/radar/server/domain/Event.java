@@ -3,6 +3,9 @@ package com.alterjoc.radar.server.domain;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import javax.persistence.Basic;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Transient;
 import javax.validation.constraints.Size;
@@ -142,6 +145,7 @@ public class Event extends TimestampedEntity implements SocialEvent
       this.address = address;
    }
 
+   @Basic
    public GeoPt getPoint()
    {
       return point;

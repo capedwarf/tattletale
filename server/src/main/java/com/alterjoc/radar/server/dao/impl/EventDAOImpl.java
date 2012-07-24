@@ -3,6 +3,7 @@ package com.alterjoc.radar.server.dao.impl;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
@@ -13,7 +14,6 @@ import com.alterjoc.radar.server.domain.Event;
 import com.alterjoc.radar.server.domain.Subscription;
 import org.jboss.capedwarf.jpa.ProxyingEnum;
 import org.jboss.capedwarf.server.api.cache.Cacheable;
-import org.jboss.capedwarf.server.api.dao.impl.AbstractTimestampedDAO;
 import org.jboss.capedwarf.server.api.dao.impl.TimestampedListKeyStrategy;
 import org.jboss.capedwarf.server.api.persistence.Proxying;
 import org.jboss.capedwarf.server.api.tx.TransactionPropagationType;
@@ -24,7 +24,7 @@ import org.jboss.capedwarf.server.api.tx.Transactional;
  *
  * @author <a href="mailto:ales.justin@jboss.org">Ales Justin</a>
  */
-public class EventDAOImpl extends AbstractTimestampedDAO<Event> implements EventDAO
+public class EventDAOImpl extends HackDAO<Event> implements EventDAO
 {
    protected Class<Event> entityClass()
    {

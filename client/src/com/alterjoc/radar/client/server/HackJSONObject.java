@@ -2,6 +2,7 @@ package com.alterjoc.radar.client.server;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 
 /**
  * Modified json object.
@@ -10,6 +11,15 @@ import org.json.JSONObject;
  */
 class HackJSONObject extends JSONObject
 {
+   HackJSONObject()
+   {
+   }
+
+   HackJSONObject(JSONTokener jsonTokener) throws JSONException
+   {
+       super(jsonTokener);
+   }
+
    public JSONObject putOpt(String key, Object value) throws JSONException
    {
       if (value instanceof String)
